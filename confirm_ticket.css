@@ -1,0 +1,160 @@
+/* General Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3a2a1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: Sidebar and Main Content */
+    grid-template-rows: auto auto 1fr auto; /* Header, Navbar, Content, Footer */
+    grid-gap: 20px;
+flex-grow: 1; /* Make grid-container stretch to fill the viewport */
+    width: 100%;
+}
+h1 {
+    font-size: 36px;
+    color: #2b8a3e; /* Green for main headings */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0073e6; /* Blue for secondary headings */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    color: #d9534f; /* Red for tertiary headings */
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+/* Logo and Header */
+.logo-container {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.header-container {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.header-container p {
+    font-size: 18px;
+    color: #47eb15;
+}
+
+/* Navbar */
+.navbar-container {
+    grid-column: 1 / span 2; /* Span across both columns */
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1be544;
+    padding: 10px 0;
+}
+
+.navbar-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-container a:hover {
+    text-decoration: underline;
+}
+
+/* Services Sidebar */
+.services-container {
+    grid-column: 1; /* First column */
+    grid-row: 3;
+    background-color: #8b8989;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.services-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-container li {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.services-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.services-container a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+.service-description-container {
+    grid-column: 2; /* Second column */
+    grid-row: 3;
+    background-color: #ffffff;
+    padding: 30px;
+    overflow-y: auto; /* Handle overflow content with scrolling */
+}
+
+.service-description-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Content Sections (Dynamic Content) */
+.content-page {
+    display: none; /* Hide all sections by default */
+    padding: 30px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid #dcefd5;
+    border-radius: 5px;
+}
+
+/* Using :target pseudo-class to display dynamic content */
+.content-page:target {
+    display: block; /* Show the section when targeted */
+}
+
+
+h2 {
+    text-transform: uppercase; /* Make all headings uppercase for emphasis */
+    font-weight: bold; /* Bold headings */
+    color: rgb(8, 222, 108);
+}
+
+

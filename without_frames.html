@@ -1,0 +1,378 @@
+<html>
+<head>
+    <title>Confirm Ticket App</title>
+    <link rel="stylesheet" href="confirm_ticket.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <!-- First Row: Logo and Header -->
+            <div class="logo-container">
+               <img src="C:\\Users\\rajes\\Downloads\\logo.jpeg" alt="App Logo">
+            </div>
+            <div class="header-container">
+                <h1>🚆🚂 Confirm Ticket App 🚂🚆</h1>
+        <p>Train Ticket booking with easy IRCTC login !</p>
+
+            </div>
+
+            <!-- Second Row: Navigation Links -->
+            <div class="navbar-container">
+                <a href="#home">Home</a>
+                <a href="#login">Login</a>
+                <a href="#registration">Registration</a>
+                <a href="#catalogue">Catalogue</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <!-- Third Row: Services Links and Description -->
+            <div class="services-container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li><a href="#ticket-booking">Ticket Booking</a></li>
+                    <li><a href="#Check Status">Check Status</a></li>
+                    <li><a href="#customer-support">Customer Support</a></li>                </ul>
+            </div>
+            <div class="service-description-container">
+ <h1>Welcome to the Confirm Ticket App</h1>
+ <p>The Confirm Ticket App is a convenient platform for booking and managing your train tickets. With a user-friendly interface, you can easily search for available trains, select your preferred options, and complete the booking process securely.</p>
+
+<p>Key features of the app include:</p>
+
+<ul>
+<li>Seamless ticket booking</li>
+<li>Ticket management and updates</li>
+<li>Payment integration</li>
+<li>Trip planning tools</li>
+<li>Notifications and alerts.</li>
+</ul>
+                <div id="home" class="content-page">
+                    <center>
+ <header>
+  <h1>Welcome to Confirm Ticket App</h1>
+   <p>Your One-Stop Solution for Booking Train Tickets</p>
+     </header>
+      <section>
+       <h1>Key Features</h1>
+        <table border="1" width="80%">
+        <tr>
+          <td align="center">
+           <img src="C:\\Users\\rajes\\Downloads\\booking.jpg" alt="Booking" width="100">
+           <h2>Easy Booking</h2>
+           <p>Book your train tickets with a simple and user-friendly interface.</p>
+           </td>
+           <td align="center">
+            <img src="C:\Users\rajes\OneDrive\Pictures\Saved Pictures\Screenshots\Screenshot 2024-12-11 004758.png" alt="Tracking" width="100">
+            <h2>Live Tracking</h2>
+            <p>Track your train's status and avoid unnecessary delays.</p>
+           </td>
+           <td align="center">
+            <img src="C:\Users\rajes\Downloads\comprehensive services.png" alt="Services" width="100">
+            <h2>Comprehensive Services</h2>
+            <p>Access various services, including reservation, cancellations, and more.</p>
+           </td>
+           </tr>
+          </table>
+        </section>
+        <footer>
+          <p>&copy; 2024 Confirm Ticket App. All rights reserved.</p>
+        </footer>
+</center>
+
+                </div>
+                <div id="login" class="content-page">
+                    <h2>Login</h2>
+    <form>
+        Username:
+        <input type="text" id="username" name="username"><br><br>
+        Password:
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Login</button>
+
+    </form>
+
+                </div>
+                <div id="registration" class="content-page">
+                    <h1>Passenger Registration</h1>
+ <form action="#" method="post">
+  <p>
+  Full Name: 
+  <input type="text" id="fullname" name="fullname" required>
+  </p>
+  <p>
+   Email Address: 
+   <input type="email" id="email" name="email" required>
+  </p>
+  <p>
+   Phone Number: 
+   <input type="tel" id="phone" name="phone" required>
+  </p>
+  <p>
+   Age: 
+    <input type="number" id="age" name="age" required>
+  </p>
+  <p>
+   Gender: 
+     <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      </select>
+  </p>
+  <p>
+    Preferred Train: 
+     <select id="train" name="train">
+       <option value="janmabhoomi">Janmabhoomi Express</option>
+       <option value="simhadri">Simhadri Express</option>
+       <option value="vandebharat">Vande Bharat Express</option>
+       <option value="viswesvaraya">Viswesvaraya Express</option>
+       <option value="ltt">LTT Express</option>
+       <option value="godavari">Godavari Express</option>
+       <option value="gatiman">Gatiman Express</option>
+       </select>
+  </p>
+  <p>
+    Travel Class: 
+     <select id="class" name="class">
+      <option value="ac-chair">AC Chair Car</option>
+      <option value="ac-sleeper">AC Sleeper</option>
+      <option value="sleeper">Sleeper</option>
+      <option value="general">General</option>
+      </select>
+ </p>
+ <p>
+   Travel Date: 
+    <input type="date" id="date" name="date" required>
+     </p>
+      <button type="submit">Register</button>
+ </form>
+<p>Your personal information will be used only for booking purposes and is kept secure.</p>
+
+                </div>
+                <div id="catalogue" class="content-page">
+                    <center>
+ <h1>Indian Railways - Train Catalogue</h1>
+  <p>Explore schedules and fares for popular trains in India, categorized by class.</p>
+   <table border="1">
+    <thead>
+     <tr>
+      <th>Train Name</th>
+       <th>Route</th>
+       <th>Departure</th>
+       <th>Arrival</th>
+       <th>AC Chair Car (₹)</th>
+       <th>AC Sleeper (₹)</th>
+       <th>Sleeper (₹)</th>
+       <th>General (₹)</th>
+        </tr>
+     </thead>
+     <tbody>
+     <tr>
+     <td>Janmabhoomi Express</td>
+      <td>Visakhapatnam to Vijayawada</td>
+      <td>6:15 AM</td>
+      <td>12:45 PM</td>
+      <td>500</td>
+      <td>750</td>
+      <td>300</td>
+      <td>150</td>
+      </tr>
+      <tr>
+      <td>Simhadri Express</td>
+       <td>Visakhapatnam to Guntur</td>
+       <td>7:10 AM</td>
+       <td>1:00 PM</td>
+       <td>450</td>
+       <td>700</td>
+       <td>250</td>
+       <td>120</td>
+       </tr>
+       <tr>
+       <td>Vande Bharat Express</td>
+         <td>Secunderabad to Visakhapatnam</td>
+         <td>6:00 AM</td>
+         <td>2:30 PM</td>
+         <td>1,500</td>
+         <td>2,000</td>
+         <td>1,000</td>
+         <td>500</td>
+         </tr>
+       <tr>
+        <td>Viswesvaraya Express</td>
+         <td>Bangalore to Hyderabad</td>
+         <td>5:50 PM</td>
+         <td>5:00 AM (next day)</td>
+         <td>1,000</td>
+         <td>1,500</td>
+         <td>800</td>
+         <td>400</td>
+        </tr>
+        <tr>
+          <td>LTT Express</td>
+           <td>Mumbai LTT to Gorakhpur</td>
+            <td>11:30 AM</td>
+            <td>2:00 PM (next day)</td>
+            <td>1,800</td>
+            <td>2,200</td>
+            <td>1,200</td>
+            <td>600</td>
+         </tr>
+        <tr>
+         <td>Godavari Express</td>
+           <td>Visakhapatnam to Hyderabad</td>
+           <td>5:15 PM</td>
+           <td>6:00 AM (next day)</td>
+           <td>800</td>
+           <td>1,200</td>
+           <td>500</td>
+           <td>250</td>
+         </tr>
+         <tr>
+         <td>Gatiman Express</td>
+          <td>Delhi to Jhansi</td>
+          <td>8:10 AM</td>
+          <td>12:30 PM</td>
+          <td>1,400</td>
+          <td>1,800</td>
+          <td>900</td>
+          <td>450</td>
+         </tr>
+      </tbody>
+   </table>
+</center>
+
+                </div>
+                <div id="contact" class="content-page">
+                    <center>
+ <header>
+ <h1>Contact Us</h1>
+  <p>We're here to assist you!</p>
+  </header>
+   <section>
+    <h2>How to Reach Us</h2>
+     <table border="1">
+    <tr>
+    <td align="center">
+    <h3>Customer Support</h3>
+    <p>Email: support@confirmticket.com</p>
+    <p>Phone: +91 98765 43210</p>
+    </td>
+    <td align="center">
+    <h3>Head Office</h3>
+    <p>Address: Confirm Ticket App Pvt. Ltd.,</p>
+    <p>Plot No. 123, Silicon Valley, Bengaluru, India</p>
+    <p>Phone: +91 98765 43211</p>
+    </td>
+    <td align="center">
+    <h3>Follow Us</h3>
+    <p>Twitter: @ConfirmTicket</p>
+    <p>Facebook: Confirm Ticket App</p>
+    <p>Instagram: @confirmticketapp</p>
+    </td>
+    </tr>
+   </table>
+ </section>
+ <footer>
+  <p>&copy; 2024 Confirm Ticket App. All rights reserved.</p>
+ </footer>
+</center>
+</div>
+
+ <div id="ticket-booking" class="content-page">
+<h2>Book Your Ticket</h2>
+<form>
+ <table>
+  <tr>
+  <td>From:</td>
+  <td><input type="text" id="from" name="from"></td>
+  </tr>
+  <tr>
+  <td>To:</td>
+  <td><input type="text" id="to" name="to"></td>
+  </tr>
+  <tr>
+  <td>Date:</td>
+  <td><input type="date" id="date" name="date"></td>
+  </tr>
+  <tr>
+  <td>
+  <button type="submit">Submit</button>
+  </td>
+  </tr>
+ </table>
+</form>
+
+</div>
+ 
+<div id="Check Status" class="content-page">
+<h2>Check Status</h2>
+ <center>
+ <h1>Check Ticket Status</h1>
+  <p>Enter your PNR  number below to check your ticket status.</p>
+  <form action="#" method="post">
+  <table>
+  <tr>
+  <td>
+  <input type="text" id="pnr" name="pnr">
+  </td>
+  </tr>
+  <tr>
+  <td>
+   <button type="submit">Check Status</button>
+  </td>
+  </tr>
+  </table>
+  </form>
+</center>
+</div>
+
+<div id="customer-support" class="content-page">
+ <h2>Customer Support</h2>
+ <center>
+ <h1>Customer Support</h1>
+  <p>Submit your queries or complaints, and our support team will get back to you shortly.</p>
+  <form action="#" method="post">
+  <table>
+  <tr>
+  <td>Full Name</td>
+  </tr>
+  <tr>
+  <td>
+   <input type="text" id="name" name="name" required>
+  </td>
+  </tr>
+  <tr>
+  <td>Email Address</td>
+  </tr>
+  <tr>
+  <td>
+   <input type="email" id="email" name="email" required>
+  </td>
+   </tr>
+   <tr>
+   <td>Your Query</td>
+   </tr>
+   <tr>
+   <td>
+   <textarea id="query" name="query"></textarea>
+   </td>
+   </tr>
+   <tr>
+  <td>
+    <button type="submit">Submit</button>
+  </td>
+ </tr>
+ </table>
+</form>
+</center>
+</div>
+             </div>
+            </div>
+        </div>
+
+       </div>
+</body>
+</html>
+
+
+
