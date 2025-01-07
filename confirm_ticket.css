@@ -28,6 +28,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+
 h2 {
     font-size: 24px;
     color: #0073e6; /* Blue for secondary headings */
@@ -127,28 +128,31 @@ h3 {
     grid-row: 3;
     background-color: #ffffff;
     padding: 30px;
-    overflow-y: auto; /* Handle overflow content with scrolling */
+    overflow-y: hidden;
+    /* Handle overflow content with scrolling */
 }
 
 .service-description-container h2 {
     font-size: 24px;
     color: #333;
+
 }
 
-/* Content Sections (Dynamic Content) */
+:root:not(:has(:target)) #main {
+    display: block;
+}
+
+:root:not(:has(:target)) .content-page {
+    display: none;
+}
 .content-page {
-    display: none; /* Hide all sections by default */
-    padding: 30px;
-    background-color: white;
-    margin-top: 20px;
-    border: 1px solid #dcefd5;
-    border-radius: 5px;
+    display: none; 
 }
 
-/* Using :target pseudo-class to display dynamic content */
 .content-page:target {
-    display: block; /* Show the section when targeted */
+    display: block; 
 }
+
 
 
 h2 {
@@ -156,5 +160,4 @@ h2 {
     font-weight: bold; /* Bold headings */
     color: rgb(8, 222, 108);
 }
-
 
