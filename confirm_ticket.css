@@ -1,10 +1,8 @@
-/* General Reset and Layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #a3a2a1;
@@ -12,26 +10,24 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* Two columns: Sidebar and Main Content */
-    grid-template-rows: auto auto 1fr auto; /* Header, Navbar, Content, Footer */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
     grid-gap: 20px;
-flex-grow: 1; /* Make grid-container stretch to fill the viewport */
+flex-grow: 1;
     width: 100%;
 }
 h1 {
     font-size: 36px;
-    color: #2b8a3e; /* Green for main headings */
+    color: #2b8a3e; 
     margin-bottom: 10px;
 }
 
 
 h2 {
     font-size: 24px;
-    color: #0073e6; /* Blue for secondary headings */
+    color: #0073e6;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
@@ -39,18 +35,16 @@ h2 {
 
 h3 {
     font-size: 20px;
-    color: #d9534f; /* Red for tertiary headings */
+    color: #d9534f;
     margin-bottom: 8px;
     text-decoration: underline;
 }
 
-/* Logo and Header */
 .logo-container {
     grid-column: 1;
     grid-row: 1;
     text-align: center;
 }
-
 .header-container {
     grid-column: 2;
     grid-row: 1;
@@ -68,9 +62,8 @@ h3 {
     color: #47eb15;
 }
 
-/* Navbar */
 .navbar-container {
-    grid-column: 1 / span 2; /* Span across both columns */
+    grid-column: 1 / span 2; 
     grid-row: 2;
     display: flex;
     justify-content: space-around;
@@ -88,9 +81,9 @@ h3 {
     text-decoration: underline;
 }
 
-/* Services Sidebar */
+
 .services-container {
-    grid-column: 1; /* First column */
+    grid-column: 1; 
     grid-row: 3;
     background-color: #8b8989;
     padding: 20px;
@@ -118,46 +111,38 @@ h3 {
     color: #333;
 }
 
-.services-container a:hover {
+.services-container a:hover
+{
     text-decoration: underline;
 }
-
-/* Main Content Area */
-.service-description-container {
-    grid-column: 2; /* Second column */
+.service-description-container 
+{
+    grid-column: 2;
     grid-row: 3;
     background-color: #ffffff;
     padding: 30px;
     overflow-y: hidden;
-    /* Handle overflow content with scrolling */
 }
-
-.service-description-container h2 {
+.service-description-container h2 
+{
     font-size: 24px;
     color: #333;
-
 }
-
 :root:not(:has(:target)) #main {
     display: block;
 }
-
 :root:not(:has(:target)) .content-page {
     display: none;
 }
 .content-page {
     display: none; 
 }
-
 .content-page:target {
     display: block; 
 }
 
-
-
 h2 {
-    text-transform: uppercase; /* Make all headings uppercase for emphasis */
-    font-weight: bold; /* Bold headings */
+    text-transform: uppercase; 
+    font-weight: bold;
     color: rgb(8, 222, 108);
 }
-
